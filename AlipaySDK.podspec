@@ -15,8 +15,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/stephenzl/AlipaySDK.git"}
 
   s.platform     = :ios, '5.0'
-  s.source_files = 'Classes/*.{h,m}'
-  s.vendored_libraries = 'Classes/*.a'
+  s.source_files = 'Classes'
+  s.vendored_libraries = '*.a'
 
   s.framework = 'Security','CFNetwork','SystemConfiguration'
   s.dependency 'JSONKit','~> 1.4'
