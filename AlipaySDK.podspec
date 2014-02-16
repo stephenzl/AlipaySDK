@@ -19,11 +19,11 @@ Pod::Spec.new do |s|
   s.vendored_libraries = '*.a'
   
   s.subspec 'Utilities' do |ss|
-      ss.source_files = 'Utilities/*.{h,m}'
+      ss.source_files = 'Classes/Utilities/*.{h,m}'
   end
   
   s.subspec 'openssl' do |ss|
-      ss.source_files = 'openssl/*.{h,m}'
+      ss.source_files = 'Classes/openssl/*.{h,m}'
   end
 
   s.framework = 'Security','CFNetwork','SystemConfiguration'
