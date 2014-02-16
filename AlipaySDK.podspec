@@ -15,13 +15,9 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/stephenzl/AlipaySDK.git"}
 
   s.platform     = :ios, '5.0'
-  s.source_files = 'Classes/*.{h,m}'
+  s.source_files = 'Classes/*.{h,m}','Classes/Utilities/*.{h,m}'
   s.vendored_libraries = '*.a'
-  
-  s.subspec 'Utilities' do |ss|
-      ss.source_files = 'Classes/Utilities/*.{h,m}'
-  end
-  
+
   s.subspec 'openssl' do |ss|
       ss.source_files = 'Classes/openssl/*.{h,m}'
   end
