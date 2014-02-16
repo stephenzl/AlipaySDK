@@ -23,7 +23,6 @@ Pod::Spec.new do |s|
   end
   
   s.requires_arc = true
-  s.public_header_files = "Classes/openssl/*.h"
   s.framework = 'Security','CFNetwork','SystemConfiguration'
   s.dependency 'JSONKit','~> 1.4'
 end
