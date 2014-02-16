@@ -21,8 +21,9 @@ Pod::Spec.new do |s|
   s.subspec 'openssl' do |ss|
       ss.source_files = 'Classes/openssl/*.{h,m}'
   end
-
-  s.public_header_files = "openssl/*.h"
+  
+  s.requires_arc = true
+  s.public_header_files = "Classes/openssl/*.h"
   s.framework = 'Security','CFNetwork','SystemConfiguration'
   s.dependency 'JSONKit','~> 1.4'
 end
